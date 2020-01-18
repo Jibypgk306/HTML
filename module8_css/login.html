@@ -1,0 +1,79 @@
+<html>
+<style>
+    body {
+        margin: 10px;
+        padding: 10px;
+        background-image: url("vc.jpg");
+        border-radius: 20px;
+    }
+    
+    .main {
+        top: 100%;
+        left: 100%;
+        padding: 60px 40px 50px 40px;
+    }
+    
+    .dv {
+        padding: 60px 40px 50px 40px;
+        border-radius: 20px;
+    }
+    
+    .submit {
+        border-radius: 20px;
+        padding: 10px 20px;
+        background: dodgerblue;
+        color: white;
+        margin-top: 10px;
+        border: none;
+        outline: none;
+        margin-left: 50px;
+    }
+    
+    img {
+        border-radius: 50%;
+        position: absolute;
+        margin-left: -50px;
+        margin-top: -230px;
+    }
+    
+    #name {
+        width: 200px;
+        border: royalblue;
+        background: transparent;
+        border-bottom: 1px solid red;
+        padding: 6px;
+        margin-bottom: 15px;
+        color: blue;
+    }
+    
+    #name:hover {
+        border: blueviolet;
+        background-color: rgb(20, 255, 196);
+        padding: 10px;
+        color: deeppink;
+    }
+</style>
+<div class="main">
+    <form action="reg.html" method="post" id="reg"></form>
+    <div class="dv">
+        <form action="https://www.1800flowers.com/" method="GET" id="up">
+            <br><br><br> <br><br><br>
+            <center>
+                <fieldset style="width:500px">
+                    <legend>
+                        <font size="5" color="black"><b>Login</legend></b>
+                        </font>
+                        <img src="computer.png" width="200" height="200">
+                        <input type="email" name="username" placeholder="username" id="name"><br><br>
+                        <input type="password" name="password" id="name" placeholder="password" minlength="8" maxlength="12" /><br><br>
+                        <a href="#" id="name">Forgot password</a><br><br>
+                        <input type="submit" name="Sign_Up" value="Sign-Up" form="reg" class="submit" />
+                        <input type="submit" name="Sign_In" value="Sign-In" form="up" class="submit" />
+                </fieldset>
+            </center>
+    </div>
+</div>
+</form>
+</body>
+
+</html>
