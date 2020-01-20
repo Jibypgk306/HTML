@@ -1,0 +1,19 @@
+{
+    "events": [{
+            "Name": "Jibymol",
+            "Cource": "MCA",
+            "Percentage": "96%"
+
+        },
+        {
+            "Name": "Silbymol",
+            "Cource": "MBA",
+            "Percentage": "98%"
+        },
+        {
+            "Name": "Sollymol",
+            "Cource": "MSW",
+            "Percentage": "93%"
+        }
+    ]
+}
