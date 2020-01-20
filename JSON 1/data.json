@@ -1,0 +1,19 @@
+{
+    "events": [{
+            "location": "Canada",
+            "date": "May 7",
+            "map": "a.jpg"
+
+        },
+        {
+            "location": "Newziland",
+            "date": "May 2",
+            "map": "b.jpg"
+        },
+        {
+            "location": "Ireland",
+            "date": "June 7",
+            "map": "a.jpg"
+        }
+    ]
+}
