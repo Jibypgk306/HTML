@@ -1,0 +1,42 @@
+.box {
+    width: 1310px;
+    height: 100px;
+}
+
+.red {
+    background: #3b5998;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 200px;
+    height: 300px;
+    /* Should be removed. Only for demonstration */
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main {
+    position: relative;
+    left: 900px;
+    top: -450px;
+}
+
+.submit {
+    border: 20px;
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    margin-left: 50px;
+}
