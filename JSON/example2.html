@@ -1,0 +1,15 @@
+<html>
+<p id="user"></p>
+<script>
+    var s = '{"employees":[' +
+        '{"firstname":"john","lastname":"Doe"},' +
+        '{"firstname":"jiby","lastname":"Joseph"},' +
+        '{"firstname":"Solly","lastname":"Joseph"}]}';
+
+    var obj = JSON.parse(s);
+    console.log(obj.location);
+    document.getElementById("user").innerHTML = obj.employees[0].firstname + " " + obj.employees[1].firstname + " " +
+        obj.employees[2].lastname;
+</script>
+
+</html>
