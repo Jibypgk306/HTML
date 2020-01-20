@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="view-port" content="width-device-width,initial-scale-1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="main.js"></script>
+    <script>
+        function register() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("demo").innerHTML = this.responseText;
+                }
+                JQ
+            };
+            xhttp.open("GET", "register.html", true);
+            xhttp.send();
+        }
+
+        function sign() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("demo").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "signin.html", true);
+            xhttp.send();
+        }
+
+
+        function home() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("demo").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "index.html", true);
+            xhttp.send();
+        }
+    </script>
+    <style>
+        body {
+            background-image: url("px.png");
+        }
+        
+        .container {
+            background-color: purple;
+            width: 1400px;
+            height: 150px;
+        }
+    </style>
+</head>
+<div class="container">
+    <div class="row">
+        <h1>
+            <font color="white"><i><center>CAR SHOWROOM</i>
+            </font>
+        </h1>
+        <div id="demo">
+            <div class="col-sm-2 col-md-case2 col-lg-2 col-xs-12">
+
+                <body>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                    <center>
+                        <button type="button" class="btn btn-primary" onclick="register()">Sign Up</button>
+                        <button type="button" class="btn btn-primary" onclick="sign()">Sign In</button></center>
+
+            </div>
+            </center>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
