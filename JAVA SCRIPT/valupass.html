@@ -1,0 +1,16 @@
+<html>
+Value1:<input type="number" id="num"><br> Value2:
+<input type="number" id="num1"><br>
+<button onclick="fun1(num.value,num1.value)">Press Button</button>
+<script>
+    function fun1(num, num1) {
+        num = parseInt(num);
+        num1 = parseInt(num1);
+        var n = num1 + num;
+        document.write("<h1>You Gave " + num + "</h1>");
+        document.write("<h1>You Gave " + num1 + "</h1>");
+        document.write("<h1>You Gave " + n + "</h1>");
+    }
+</script>
+
+</html>

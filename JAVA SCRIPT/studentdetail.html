@@ -1,0 +1,45 @@
+<html>
+<script>
+    function val() {
+        var name = document.getElementById("name").value;
+        var age = document.getElementById("age").value;
+        var email = document.getElementById("email").value.indexOf("@");
+        ok = "true";
+        var cource = document.getElementById("cource").value;
+        var percentage = document.getElementById("percentage").value;
+
+        if (name.length > 10) {
+            alert("The name contain more than 10 characters");
+            ok = "false";
+        }
+        if (age > 100 || age < 1 || isNaN(age)) {
+            alert("The age not valid");
+            ok = "false";
+        }
+        if (email == -1) {
+            alert('Invalid Email Address');
+            return (false);
+        }
+        var letters = /^[A-Za-z]+$/;
+        if (cource.value.match(letters)) {
+            alert("invalid");
+            ok = "false";
+        }
+        if (percentage > 100 || age < 30 || isNaN(percentage)) {
+            alert("not valid");
+            ok = "false";
+        }
+    }
+</script>
+<form>
+    <frame>
+        Name:<input type="text" id="name" name="name" required size="20" /><br><br> &nbsp;&nbsp;&nbsp;age:
+        <input type="text" id="age" name="age" size="20" required /><br><br> Email:
+        <input type="text" id="email" name="email" size="20" required/><br><br> Cource:
+        <input type="text" id="cource" name="cource" size="20" required /><br><br> Percentage:
+        <input type="text" id="percentage" name="percentage" size="20" required /><br><br><br>
+        <input type="button" value="OK" onclick="val()">
+    </frame>
+</form>
+
+</html>
