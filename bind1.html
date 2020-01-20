@@ -1,0 +1,49 @@
+<html>
+<script src="js/jquery-1.11.0.js"></script>
+
+<body>
+    <h1>ADDITION</h1>
+    <script>
+        $(document).ready(function() {
+            $("#btn").bind('click', add),
+                $("#a").bind('keyup', ch)
+                .bind('blur', blur);
+            $("#a").bind('focus', focus);
+            $("#b").bind('keyup', ch1);
+            $("#b").bind('focus', focus);
+
+        });
+
+        function add() {
+            var c = Number($("#a").val()) + Number($("#b").val())
+            $("#out").html("Total ->" + c);
+        }
+
+        function ch() {
+            $("#out").html("A Typing..");
+
+        }
+
+        function ch1() {
+            $("#out").html("B Typing..");
+
+        }
+
+        function blur() {
+            $("#out").html("A Outside Typing..");
+
+        }
+
+        function focus() {
+            $("#out").html("You are select this box..");
+
+        }
+    </script>
+    <form>
+        A<input type="text" id="a"> B
+        <input type="text" id="b">
+        <button type="button" id="btn">Add</button>
+        <p id="out"></p>
+    </form>
+
+</html>

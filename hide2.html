@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <body>
+        <p id="dd">
+            <input type="text" placeholder="FirstName" id="fname" required="required"><br/><br/>
+            <input type="text" placeholder="LastName" id="lname" required="required"><br/><br/>
+            <input type="text" placeholder="City" id="city" required="required"><br/><br/>
+            <input type="text" placeholder="State" id="state" required="required"><br/><br/>
+            <input type="date" placeholder="Date" id="date" required="required"><br/><br/>
+            <input type="text" placeholder="UserName" id="uname" required="required"><br/><br/>
+            <input type="email" placeholder="Email" id="email" required="required">
+        </p>
+
+
+        <button id="show">Sign Up</button>
+        <button id="log">Log In</button>
+
+        <button id="hide">Hide</button>
+        <script>
+            $("button").click(function() {
+                $("#div1").fadeIn();
+                $("#div2").fadeIn("slow");
+                $("#div3").fadeIn(3000);
+            });
+
+            $(document).ready(function() {
+                $("#hide").click(function() {
+                    $("#dd").hide(10000);
+                })
+                $("#show").click(function() {
+                    $("#dd").show(10000);
+                })
+
+            });
+        </script>
+    </body>
+</head>
+
+</html>

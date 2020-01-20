@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#flip").click(function() {
+                $("#panel").slideDown("fast");
+
+            })
+
+
+            $("#flip1").click(function() {
+                $("#panel1").slideDown("fast");
+
+            })
+        });
+    </script>
+    <style>
+        #panel,
+        #flip {
+            padding: 5px;
+            text-align: center;
+            height: 232px;
+            width: 388px;
+        }
+        
+        #panel {
+            padding: 50px;
+            display: none;
+            height: 120;
+            width: 70;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="flip"><button>Sign Up</button></div>
+    <div id="panel">
+        <input type="text" placeholder="FirstName" id="fname" required="required"><br/><br/>
+        <input type="text" placeholder="LastName" id="lname" required="required"><br/><br/>
+        <input type="text" placeholder="City" id="city" required="required"><br/><br/>
+        <input type="text" placeholder="State" id="state" required="required"><br/><br/>
+        <input type="date" placeholder="Date" id="date" required="required"><br/><br/>
+        <input type="text" placeholder="UserName" id="uname" required="required"><br/><br/>
+        <input type="email" placeholder="Email" id="email" required="required">
+    </div>
+    </div>
+</body>
+
+</html>
